@@ -1,0 +1,8 @@
+.hw {
+    text-decoration: underline;
+    color: gray;
+}
+
+.hw:hover {
+    color: white;
+}

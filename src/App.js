@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import './message.css'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -16,10 +17,17 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
+        <Message msg="Hello world!"/>
+
       </header>
     </div>
   );
+}
+
+function Message({msg}) {
+  return (<h1 class="hw">{msg}</h1>);
+  
 }
 
 export default App;
